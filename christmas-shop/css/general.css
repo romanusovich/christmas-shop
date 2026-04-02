@@ -93,3 +93,52 @@ h4 {
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+    max-width: 1276px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+}
+
+.logo > img {
+    width: 24px;
+    height: 24px;
+}
+
+nav > ul {
+    display: flex;
+    gap: 8px;
+}
+
+nav > ul > li {
+    list-style: none;
+    padding: 12px 20px;
+}
