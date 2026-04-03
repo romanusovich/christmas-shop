@@ -92,6 +92,18 @@ h4 {
     letter-spacing: 1.5%;
 }
 
+.for-work {
+    color: var(--tag-purple);
+}
+
+.for-health {
+    color: var(--tag-green);
+}
+
+.for-harmony {
+    color: var(--tag-pink);
+}
+
 * {
     margin: 0;
     padding: 0;

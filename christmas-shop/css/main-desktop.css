@@ -161,3 +161,63 @@
     height: 56px;
     border-radius: 20px;
 }
+
+#best-gifts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+    min-height: 554px;
+}
+
+.best-gifts-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1276px;
+}
+
+.best-gifts-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: var(--static-white);
+}
+
+.best-gifts-items {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+}
+
+.best-gift-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--content-background);
+    border-radius: 20px;
+
+    width: 310px;
+    height: 342px;
+}
+
+.best-gift-item > img {
+    height: 230px;
+}
+
+.best-gift-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 8px;
+    padding: 20px;
+    border-radius: 20px;
+
+    background-color: var(--static-white);
+}
