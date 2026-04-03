@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #FF4646;
+    --primary-10: #FF46461A;
+    --content-background: #ECF3F8;
+    --static-white: #FFFFFF;
+    --static-white-40: #FFFFFF66;
+    --static-white-20: #FFFFFF33;
+    --overlay: #181C29CC;
+    --dark: #181C29;
+    --tag-purple: #4361FF;
+    --tag-pink: #FF43F7;
+    --tag-green: #06A44F;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+    min-height: 524px;
+}
+
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    max-width: 426px;
+    width: 100%;
+
+    padding: 60px 0px;
+    gap: 12px;
+}
+
+.hero-content > .action-small {
+    color: var(--static-white);
+    background-color: var(--dark);
+
+    padding: 20px 32px;
+    border-radius: 20px;
+}
+
+.hero-content > .action-small:hover {
+    color: var(--dark);
+    background-color: var(--static-white);
+}
