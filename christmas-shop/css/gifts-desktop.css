@@ -55,6 +55,8 @@
     color: var(--static-white);
     background-color: transparent;
     border: none;
+
+    transition: all 0.3s ease;
 }
 
 .gifts-tabs > button:hover, .gifts-tabs > button.active {
@@ -80,6 +82,16 @@
 
     width: 310px;
     height: 342px;
+
+    cursor: pointer;
+}
+
+.gift-item:hover .gift-text .h3 {
+    transition: all 0.3s ease;
+}
+
+.gift-item:hover .gift-text .h3 {
+    color: var(--primary-color);
 }
 
 .gift-item > img {

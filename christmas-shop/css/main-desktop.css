@@ -53,6 +53,8 @@ section {
 
     padding: 20px 32px;
     border-radius: 20px;
+
+    transition: all 0.3s ease;
 }
 
 .hero-button:hover, .cta-button:hover {
@@ -176,6 +178,8 @@ section {
     width: 56px;
     height: 56px;
     border-radius: 20px;
+
+    transition: all 0.3s ease;
 }
 
 .slider-button.inactive {
@@ -233,6 +237,16 @@ section {
 
     width: 310px;
     height: 342px;
+
+    cursor: pointer;
+}
+
+.best-gift-item > .best-gift-text > .h3 {
+    transition: all 0.3s ease;
+}
+
+.best-gift-item:hover > .best-gift-text > .h3 {
+    color: var(--primary-color);
 }
 
 .best-gift-item > img {
