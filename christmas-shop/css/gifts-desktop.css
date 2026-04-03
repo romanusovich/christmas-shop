@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #FF4646;
+    --primary-10: #FF46461A;
+    --content-background: #ECF3F8;
+    --static-white: #FFFFFF;
+    --static-white-40: #FFFFFF66;
+    --static-white-20: #FFFFFF33;
+    --overlay: #181C29CC;
+    --dark: #181C29;
+    --tag-purple: #4361FF;
+    --tag-pink: #FF43F7;
+    --tag-green: #06A44F;
+}
+
+#gifts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px;
+
+    background-color: var(--primary-color);
+    border-radius: 20px;
+
+    background-image: url('../images/bg-garland.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+
+.gifts-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    color: var(--static-white);
+}
+
+.gifts-content > h1 {
+    text-align: center;
+    max-width: 426px;
+    width: 100%;
+}
+
+.gifts-tabs {
+    display: flex;
+    gap: 8px;
+    border-radius: 12px;
+}
+
+.gifts-tabs > button {
+    padding: 12px 20px;
+    border-radius: 12px;
+    color: var(--static-white);
+    background-color: transparent;
+    border: none;
+}
+
+.gifts-tabs > button:hover, .gifts-tabs > button.active {
+    background-color: var(--static-white-20);
+}
+
+.gifts-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 12px;
+}
+
+.gift-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--content-background);
+    border-radius: 20px;
+
+    width: 310px;
+    height: 342px;
+}
+
+.gift-item > img {
+    height: 230px;
+}
+
+.gift-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 8px;
+    padding: 20px;
+    border-radius: 20px;
+
+    color: black;
+    background-color: var(--static-white);
+}
