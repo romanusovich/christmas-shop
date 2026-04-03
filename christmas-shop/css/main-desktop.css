@@ -12,14 +12,26 @@
     --tag-green: #06A44F;
 }
 
+section {
+    background-image: url('../images/bg-snow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 #hero {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 60px 0px;
     min-height: 524px;
-}
+    border-radius: 20px 20px 0 0;
 
+    background-image: url('../images/bg-snow.png'), url('../images/bg-ball.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 .hero-content {
     display: flex;
@@ -154,12 +166,29 @@
 }
 
 .slider-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     background-color: transparent;
     border: 1px solid var(--static-white);
 
     width: 56px;
     height: 56px;
     border-radius: 20px;
+}
+
+.slider-button.inactive {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.slider-button:hover:not(.inactive) {
+    background-color: var(--static-white);
+}
+
+.slider-button:hover:not(.inactive) > svg > path {
+    stroke: var(--primary-color);
 }
 
 #best-gifts {
@@ -228,6 +257,12 @@
     align-items: center;
     padding: 60px 0px;
     min-height: 668px;
+    border-radius: 0 0 20px 20px;
+
+    background-image: url('../images/bg-snow.png'), url('../images/bg-forest.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .cta-content {

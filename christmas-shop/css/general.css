@@ -110,14 +110,16 @@ h4 {
     box-sizing: border-box;
 }
 
+section {
+    background-color: var(--primary-color);
+}
+
 .container {
     width: 1440px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-
-    background-color: var(--primary-color);
 }
 
 header {
