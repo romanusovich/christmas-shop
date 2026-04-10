@@ -333,3 +333,18 @@ section {
     transform: translateY(-50%);
     color: var(--static-white-40);
 }
+
+@media (max-width: 660px) {
+    .about-content {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .about-text {
+        padding: 0px 20px;
+    }
+
+    .cta-content {
+        padding: 60px 0px;
+    }
+}
