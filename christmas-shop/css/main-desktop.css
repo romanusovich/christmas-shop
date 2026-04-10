@@ -66,13 +66,13 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 0px;
+    padding: 60px 8px;
     min-height: 648px;
 }
 
 .about-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--static-white);
     border-radius: 20px;
@@ -104,21 +104,19 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .about-image > img {
     border-radius: 20px;
 }
 
-.about-text, .about-image {
-    flex: 1;
-}
-
 #slider {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 0px;
+    padding: 60px 8px;
     min-height: 488px;
 }
 
@@ -223,6 +221,8 @@ section {
 .best-gifts-items {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     gap: 12px;
 }

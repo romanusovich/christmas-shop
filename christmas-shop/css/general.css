@@ -62,7 +62,7 @@ h4, .h4 {
     font-family: Montserrat, sans-serif;
     font-size: 24px;
     font-weight: 600;
-    line-height: 152%;
+    line-height: 150%;
     letter-spacing: 16%;
     text-transform: uppercase;
 }
@@ -131,6 +131,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 64px;
+    padding: 0px 8px;
 }
 
 nav {
@@ -191,6 +192,7 @@ footer {
     justify-content: center;
     align-items: center;
     min-height: 496px;
+    padding: 0px 8px;
 }
 
 .footer-content {
@@ -271,10 +273,6 @@ footer {
         width: 100%;
     }
 
-    section, header, footer {
-        padding: 0px 8px;
-    }
-
     .nav-links {
         display: none;
     }
@@ -303,5 +301,13 @@ footer {
 
     .burger-menu > span:nth-child(2) {
         top: 24px;
+    }
+
+    
+}
+
+@media (max-width: 1060px) { 
+    .footer-contacts {
+        flex-direction: column;
     }
 }
