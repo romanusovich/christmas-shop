@@ -57,11 +57,6 @@ section {
     transition: all 0.3s ease;
 }
 
-.hero-button:hover, .cta-button:hover {
-    color: var(--dark);
-    background-color: var(--static-white);
-}
-
 #about {
     display: flex;
     justify-content: center;
@@ -186,14 +181,6 @@ section {
     cursor: default;
 }
 
-.slider-button:hover:not(.inactive) {
-    background-color: var(--static-white);
-}
-
-.slider-button:hover:not(.inactive) > svg > path {
-    stroke: var(--primary-color);
-}
-
 #best-gifts {
     display: flex;
     justify-content: center;
@@ -244,10 +231,6 @@ section {
 
 .best-gift-item > .best-gift-text > .h3 {
     transition: all 0.3s ease;
-}
-
-.best-gift-item:hover > .best-gift-text > .h3 {
-    color: var(--primary-color);
 }
 
 .best-gift-item > img {
@@ -333,6 +316,25 @@ section {
     top: 50%;
     transform: translateY(-50%);
     color: var(--static-white-40);
+}
+
+@media (hover: hover) {
+    .best-gift-item:hover > .best-gift-text > .h3 {
+        color: var(--primary-color);
+    }
+
+    .slider-button:hover:not(.inactive) {
+        background-color: var(--static-white);
+    }
+
+    .slider-button:hover:not(.inactive) > svg > path {
+        stroke: var(--primary-color);
+    }
+
+    .hero-button:hover, .cta-button:hover {
+        color: var(--dark);
+        background-color: var(--static-white);
+    }
 }
 
 @media (max-width: 660px) {

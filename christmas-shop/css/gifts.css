@@ -59,7 +59,7 @@
     transition: all 0.3s ease;
 }
 
-.gifts-tabs > button:hover, .gifts-tabs > button.active {
+.gifts-tabs > button.active {
     background-color: var(--static-white-20);
 }
 
@@ -86,13 +86,7 @@
     cursor: pointer;
 }
 
-.gift-item:hover .gift-text .h3 {
-    transition: all 0.3s ease;
-}
 
-.gift-item:hover .gift-text .h3 {
-    color: var(--primary-color);
-}
 
 .gift-item > img {
     height: 230px;
@@ -109,6 +103,20 @@
 
     color: black;
     background-color: var(--static-white);
+}
+
+@media (hover: hover) {
+    .gifts-tabs > button:hover {
+        background-color: var(--static-white-20);
+    }
+
+    .gift-item:hover .gift-text .h3 {
+        transition: all 0.3s ease;
+    }
+
+    .gift-item:hover .gift-text .h3 {
+        color: var(--primary-color);
+    }
 }
 
 @media (max-width: 660px) { 
