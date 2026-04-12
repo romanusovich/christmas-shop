@@ -57,22 +57,17 @@ section {
     transition: all 0.3s ease;
 }
 
-.hero-button:hover, .cta-button:hover {
-    color: var(--dark);
-    background-color: var(--static-white);
-}
-
 #about {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 0px;
+    padding: 60px 8px;
     min-height: 648px;
 }
 
 .about-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--static-white);
     border-radius: 20px;
@@ -104,21 +99,20 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 20px;
 }
 
 .about-image > img {
     border-radius: 20px;
 }
 
-.about-text, .about-image {
-    flex: 1;
-}
-
 #slider {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 0px;
+    padding: 60px 8px;
     min-height: 488px;
 }
 
@@ -187,14 +181,6 @@ section {
     cursor: default;
 }
 
-.slider-button:hover:not(.inactive) {
-    background-color: var(--static-white);
-}
-
-.slider-button:hover:not(.inactive) > svg > path {
-    stroke: var(--primary-color);
-}
-
 #best-gifts {
     display: flex;
     justify-content: center;
@@ -223,6 +209,8 @@ section {
 .best-gifts-items {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     gap: 12px;
 }
@@ -243,10 +231,6 @@ section {
 
 .best-gift-item > .best-gift-text > .h3 {
     transition: all 0.3s ease;
-}
-
-.best-gift-item:hover > .best-gift-text > .h3 {
-    color: var(--primary-color);
 }
 
 .best-gift-item > img {
@@ -332,4 +316,37 @@ section {
     top: 50%;
     transform: translateY(-50%);
     color: var(--static-white-40);
+}
+
+@media (hover: hover) {
+    .best-gift-item:hover > .best-gift-text > .h3 {
+        color: var(--primary-color);
+    }
+
+    .slider-button:hover:not(.inactive) {
+        background-color: var(--static-white);
+    }
+
+    .slider-button:hover:not(.inactive) > svg > path {
+        stroke: var(--primary-color);
+    }
+
+    .hero-button:hover, .cta-button:hover {
+        color: var(--dark);
+        background-color: var(--static-white);
+    }
+}
+
+@media (max-width: 660px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text {
+        padding: 0px 20px;
+    }
+
+    .cta-content {
+        padding: 60px 0px;
+    }
 }
