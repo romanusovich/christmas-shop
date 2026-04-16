@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
 :root {
     --primary-color: #FF4646;
     --primary-10: #FF46461A;
@@ -11,9 +14,6 @@
     --tag-pink: #FF43F7;
     --tag-green: #06A44F;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
 h1 {
     font-family: Montserrat, sans-serif;
@@ -187,6 +187,10 @@ nav > ul > li > a.active {
     display: none;
 }
 
+.burger-section {
+    display: none;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -277,7 +281,7 @@ footer {
 
 @media (max-width: 768px) {
     .container {
-        width: 100%;
+        width: 100vw;
     }
 
     .nav-links {
@@ -309,8 +313,57 @@ footer {
     .burger-menu > span:nth-child(2) {
         top: 24px;
     }
-
     
+    .burger-menu.active > span:nth-child(1) {
+        transform: translate(-50%, 50%) rotate(45deg);
+    }
+
+    .burger-menu.active > span:nth-child(2) {
+        top: 16px;
+        transform: translate(-50%, 50%) rotate(-45deg);
+    }
+
+    .burger-section {
+        display: block;
+        position: fixed;
+        top: 64px;
+        left: 0px;
+        z-index: 50;
+
+        visibility: hidden;
+        transform: translateX(100%);
+
+        height: calc(100vh - 64px);
+        width: 100vw;
+        
+        background-color: var(--static-white);
+        transition: all 0.3s ease;
+    }
+    
+    .burger-section.active {
+        position: absolute;
+        visibility: visible;
+        transform: translateX(0%);
+    }
+
+    .burger-section > nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .burger-section > nav > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .burger-section > nav > ul > li {
+        padding: 12px 20px;
+        text-align: center;
+        border-radius: 12px;
+    }
 }
 
 @media (max-width: 1060px) { 
