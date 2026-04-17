@@ -341,9 +341,13 @@ footer {
     }
     
     .burger-section.active {
-        position: absolute;
         visibility: visible;
         transform: translateX(0%);
+    }
+
+    body.burger-active {
+        overflow: hidden;
+        height: 100vh;
     }
 
     .burger-section > nav {
