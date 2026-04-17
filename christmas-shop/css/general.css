@@ -260,6 +260,10 @@ footer {
     text-align: center;
 }
 
+.scroll-to-top {
+    display: none;
+}
+
 @media (hover: hover) {
     nav > ul > li > a:hover {
         color: var(--primary-color);
@@ -367,6 +371,26 @@ footer {
         padding: 12px 20px;
         text-align: center;
         border-radius: 12px;
+    }
+
+    .scroll-to-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+        z-index: 100;
+
+        width: 56px;
+        height: 56px;
+        border-radius: 100px;
+
+        background-color: var(--static-white);
+        color: var(--primary-color);
+        border-color: var(--primary-color);
     }
 }
 
