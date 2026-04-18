@@ -1,8 +1,8 @@
 const scrollToTopButton = document.getElementById('scrollToTop');
 
 function toggleScrollToTopButton() {
-    if (window.scrollY > 300) {
-        scrollToTopButton.style.display = 'block';
+    if (window.scrollY > 300 && window.innerWidth <= 768) {
+        scrollToTopButton.style.display = 'flex';
     } else {
         scrollToTopButton.style.display = 'none';
     }
