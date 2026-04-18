@@ -219,7 +219,7 @@ section {
     gap: 12px;
 }
 
-.best-gift-item {
+.gift-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,11 +233,11 @@ section {
     cursor: pointer;
 }
 
-.best-gift-item > .best-gift-text > .h3 {
+.gift-item > .best-gift-text > .h3 {
     transition: all 0.3s ease;
 }
 
-.best-gift-item > img {
+.gift-item > img {
     height: 230px;
 }
 
@@ -323,7 +323,7 @@ section {
 }
 
 @media (hover: hover) {
-    .best-gift-item:hover > .best-gift-text > .h3 {
+    .gift-item:hover > .best-gift-text > .h3 {
         color: var(--primary-color);
     }
 

@@ -19,7 +19,7 @@ const giftsImages = {
 }
 
 function displayRandomGifts(randomGifts) {
-    const bestGiftItems = document.querySelectorAll('.best-gift-item');
+    const bestGiftItems = document.querySelectorAll('.gift-item');
     bestGiftItems.forEach((item, index) => {
         if (randomGifts[index]) {
             const gift = randomGifts[index];

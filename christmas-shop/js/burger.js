@@ -6,7 +6,7 @@ const burgerLinks = document.querySelectorAll('.burger-section nav a');
 function toggleBurgerMenu() {
     burgerButton.classList.toggle('active');
     burgerSection.classList.toggle('active');
-    body.classList.toggle('burger-active');
+    body.classList.toggle('active');
 }
 
 burgerButton.addEventListener('click', toggleBurgerMenu);
@@ -15,6 +15,6 @@ burgerLinks.forEach(link => {
     link.addEventListener('click', () => {
         burgerButton.classList.remove('active');
         burgerSection.classList.remove('active');
-        body.classList.remove('burger-active');
+        body.classList.remove('active');
     });
 });

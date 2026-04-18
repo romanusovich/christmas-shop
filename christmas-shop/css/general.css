@@ -114,6 +114,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body.active {
+    overflow: hidden;
+    height: 100vh;
+}
+
 section {
     background-color: var(--primary-color);
 }
@@ -374,6 +379,7 @@ footer {
 .superpower-img > img {
     width: 16px;
     height: 16px;
+    opacity: 0.1;
 }
 
 @media (hover: hover) {
@@ -459,11 +465,6 @@ footer {
     .burger-section.active {
         visibility: visible;
         transform: translateX(0%);
-    }
-
-    body.burger-active {
-        overflow: hidden;
-        height: 100vh;
     }
 
     .burger-section > nav {
