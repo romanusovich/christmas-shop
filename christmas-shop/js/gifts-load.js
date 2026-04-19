@@ -1,3 +1,5 @@
+import { showGiftDetails } from "./show-card.js";
+
 async function loadGiftsJSON() {
     return fetch('js/gifts.json')
         .then(response => response.json())
@@ -46,4 +48,11 @@ function displayGifts(gifts) {
     });
 }
 
-loadGiftsJSON().then(gifts => displayGifts(gifts));
+loadGiftsJSON().then(gifts => {
+    displayGifts(gifts);
+
+    const bestGifts = document.querySelectorAll('.gift-item');
+    bestGifts.forEach(gift => {
+        gift.addEventListener('click', () => showGiftDetails(gift, gifts));
+    });
+});

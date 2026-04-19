@@ -116,7 +116,6 @@ html {
 
 body.active {
     overflow: hidden;
-    height: 100vh;
 }
 
 section {
@@ -269,7 +268,7 @@ footer {
     display: none;
 }
 
-#gift-item-modal {
+.gift-item-modal {
     display: none;
 }
 
@@ -340,7 +339,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    text-align: justify;
     width: 100%;
 }
 
