@@ -1,0 +1,356 @@
+:root {
+    --primary-color: #FF4646;
+    --primary-10: #FF46461A;
+    --content-background: #ECF3F8;
+    --static-white: #FFFFFF;
+    --static-white-40: #FFFFFF66;
+    --static-white-20: #FFFFFF33;
+    --overlay: #181C29CC;
+    --dark: #181C29;
+    --tag-purple: #4361FF;
+    --tag-pink: #FF43F7;
+    --tag-green: #06A44F;
+}
+
+section {
+    background-image: url('../images/bg-snow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+    min-height: 524px;
+    border-radius: 20px 20px 0 0;
+
+    background-image: url('../images/bg-snow.png'), url('../images/bg-ball.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--static-white);
+
+    max-width: 426px;
+    width: 100%;
+
+    padding: 60px 0px;
+    gap: 12px;
+}
+
+.hero-button, .cta-button {
+    color: var(--static-white);
+    background-color: var(--dark);
+
+    padding: 20px 32px;
+    border-radius: 20px;
+
+    transition: all 0.3s ease;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 8px;
+    min-height: 648px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--static-white);
+    border-radius: 20px;
+
+    max-width: 1276px;
+    width: 100%;
+}
+
+.about-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 426px;
+    width: 100%;
+    padding: 60px 0px;
+}
+
+.about-text {
+    display: flex;
+    align-items: center;
+    padding: 0px 60px;
+}
+
+.about-text-wrapper > .caption {
+    color: var(--primary-color);
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.about-image > img {
+    border-radius: 20px;
+}
+
+#slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 8px;
+    min-height: 488px;
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1276px;
+    color: var(--static-white);
+}
+
+.slider-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.slider-items {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 20px;
+
+    transform: translateX(0.1px);
+    transition: all 0.3s ease;
+}
+
+.slider-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.slider-item > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.slider-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: transparent;
+    border: 1px solid var(--static-white);
+
+    width: 56px;
+    height: 56px;
+    border-radius: 20px;
+
+    transition: all 0.3s ease;
+}
+
+.slider-button.inactive {
+    opacity: 0.4;
+    cursor: default;
+    pointer-events: none;
+}
+
+#best-gifts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+    min-height: 554px;
+}
+
+.best-gifts-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1276px;
+}
+
+.best-gifts-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: var(--static-white);
+}
+
+.best-gifts-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 12px;
+}
+
+.gift-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--content-background);
+    border-radius: 20px;
+
+    width: 310px;
+    height: 342px;
+
+    cursor: pointer;
+}
+
+.gift-item > .best-gift-text > .h3 {
+    transition: all 0.3s ease;
+}
+
+.gift-item > img {
+    height: 230px;
+}
+
+.best-gift-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 8px;
+    padding: 20px;
+    border-radius: 20px;
+
+    background-color: var(--static-white);
+}
+
+#cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+    min-height: 668px;
+    border-radius: 0 0 20px 20px;
+
+    background-image: url('../images/bg-snow.png'), url('../images/bg-forest.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cta-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1276px;
+    color: var(--static-white);
+}
+
+.cta-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 60px 0px;
+    width: 100%;
+    max-width: 426px;
+}
+
+.cta-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.cta-timer-countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px 12px;
+
+    border-radius: 20px;
+    background-color: var(--static-white-40);
+}
+
+.cta-timer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    
+    position: relative;
+}
+
+.cta-timer-item:not(:last-child)::after {
+    content: '|';
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--static-white-40);
+}
+
+@media (hover: hover) {
+    .gift-item:hover > .best-gift-text > .h3 {
+        color: var(--primary-color);
+    }
+
+    .slider-button:hover:not(.inactive) {
+        background-color: var(--static-white);
+    }
+
+    .slider-button:hover:not(.inactive) > svg > path {
+        stroke: var(--primary-color);
+    }
+
+    .hero-button:hover, .cta-button:hover {
+        color: var(--dark);
+        background-color: var(--static-white);
+    }
+}
+
+@media (max-width: 660px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text {
+        padding: 0px 20px;
+    }
+
+    .cta-content {
+        padding: 60px 0px;
+    }
+}
