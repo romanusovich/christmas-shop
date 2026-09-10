@@ -1,1 +1,1 @@
-https://romanusovich.github.io/christmas-shop/
+https://romanusovich.github.io/christmas-shop/christmas-shop/
